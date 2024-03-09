@@ -1,0 +1,73 @@
+<!doctype >
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Open graph -->
+    <meta property="og:title" content="할머니의 따뜻한 사랑" />
+    <meta property="og:description" content="어여와 ..." />
+    <meta property="og:site_name" content="할머니네 슈퍼마켓" />
+    <title>할머니네 슈퍼마켓</title>
+
+    <!-- link 모음 -->
+    <!-- Bulma CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <!-- BootStrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Googole Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Do+Hyeon&family=IBM+Plex+Sans+KR:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" th:href="@{/css/base.css}" />
+    <link rel="stylesheet" th:href="@{/css/style.css}" />
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+    <!-- Font Awesome CSS -->
+    <script src="https://kit.fontawesome.com/f6788aacd4.js" crossorigin="anonymous"></script>
+    <!-- BootStrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+
+</head>
+
+<body class="has-navbar-fixed-top">
+<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <a class="navbar-item" href="main.html">
+            <small class="navbar_team">TEAM.</small>
+            <div class="navbar_text">harmony</div>
+        </a>
+    </div>
+    <div class="navbar_icon">
+    </div>
+</nav>
+
+<div class="main-title">
+    <div id="weather_container"></div>
+    <div class="title_content">
+        <h1>할머니네 슈퍼마켓</h1>
+        <h5 class = 'grand-mothers-love'>우리 똥강아지~ 갖고 싶은 거 있어? <br>있으면 다 줏어가 .. <br><br> 근데 이제 돈은 내고 🐶</h5>
+    </div>
+</div>
+
+<div class="products">
+    <div class="row row-cols-1 row-cols-md-4 g-4" id="product-box">
+        <div class="col">
+            <div class="product h-100">
+                <img th:src="@{/images/placeholders/product-image-preparing.png}" class="product-img-top">
+                <div class="product-body">
+                    <h5 class="product-title">상품명</h5>
+                    <p class="product-text">상품 설명</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
