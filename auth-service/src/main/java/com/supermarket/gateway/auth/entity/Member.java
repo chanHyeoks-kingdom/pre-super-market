@@ -16,7 +16,6 @@ public class Member {
     protected Member() {};
 
     public static Member createWithEncodedPassword(final String memberId, final String encodedPassword) {
-        System.out.println(encodedPassword);
         return new Member(memberId, encodedPassword);
     }
 }
