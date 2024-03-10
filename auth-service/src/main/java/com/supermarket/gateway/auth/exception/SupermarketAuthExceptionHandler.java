@@ -16,7 +16,7 @@ import java.util.stream.Collectors;
 public class SupermarketAuthExceptionHandler {
 
     @ExceptionHandler(SupermarketAuthException.class)
-    public ResponseEntity<Object> handleAuthenticationException(SupermarketAuthException ex) {
+    public ResponseEntity<Object> handleAuthenticationException(final SupermarketAuthException ex) {
         Map<String, Object> body = new LinkedHashMap<>();
         body.put("timestamp", LocalDateTime.now());
         body.put("message", ex.getMessage());
@@ -28,7 +28,7 @@ public class SupermarketAuthExceptionHandler {
 
 
     @ExceptionHandler(MethodArgumentNotValidException.class)
-    public ResponseEntity<Object> handleValidationExceptions(MethodArgumentNotValidException ex) {
+    public ResponseEntity<Object> handleValidationExceptions(final MethodArgumentNotValidException ex) {
         Map<String, Object> body = new LinkedHashMap<>();
         body.put("timestamp", LocalDateTime.now());
         body.put("error", "Validation Error");

@@ -9,7 +9,7 @@ public enum AuthErrorCode {
     private final String code;
     private final String message;
 
-    AuthErrorCode(String code, String message) {
+    AuthErrorCode(final String code, final String message) {
         this.code = code;
         this.message = message;
     }

@@ -17,7 +17,7 @@ public class MemberRegistrationController {
     private final MemberRegistrationService memberRegistrationService;
 
     @PostMapping()
-    public ResponseEntity<String> registerUser(@Valid @RequestBody MemberRegistrationRequestDTO memberRegistrationRequestDTO) {
+    public ResponseEntity<String> registerUser(@Valid @RequestBody final MemberRegistrationRequestDTO memberRegistrationRequestDTO) {
         memberRegistrationService.registerMember(memberRegistrationRequestDTO);
 
         return ResponseEntity.ok("회원가입 성공");
